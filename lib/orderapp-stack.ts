@@ -6,7 +6,7 @@ export class OrderappStackJw extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    const echo = new lambda.Function(this, "EchoFunction", {
+    const echo = new lambda.Function(this, "EchoFunctionJW", {
       runtime: lambda.Runtime.NODEJS_10_X,
       code: lambda.Code.asset('echo-handler'),
       handler: "main.handler"
