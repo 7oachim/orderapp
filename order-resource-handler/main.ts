@@ -1,3 +1,4 @@
+// @ts-ignore
 import DynamoDB from "aws-sdk/clients/dynamodb";
 
 
