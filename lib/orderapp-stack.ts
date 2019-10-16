@@ -11,5 +11,9 @@ export class OrderappStackJw extends cdk.Stack {
       code: lambda.Code.asset('echo-handler'),
       handler: "main.handler"
     });
+
+    new apigw.LambdaRestApi(this, 'MyEchoAPI', {
+      handler: echo
+    });
   }
 }
