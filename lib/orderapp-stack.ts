@@ -2,7 +2,7 @@ import cdk = require('@aws-cdk/core');
 import lambda = require('@aws-cdk/aws-lambda')
 import apigw = require('@aws-cdk/aws-apigateway')
 
-export class OrderappStack extends cdk.Stack {
+export class OrderappStackJw extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
